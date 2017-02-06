@@ -6,5 +6,7 @@ package aForms;
  * @ $Author$
  * @ $Revision$
  */
-public class SomeActionFormBase
-{}
+public class SomeActionFormBase extends
+{
+  
+}

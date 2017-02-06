@@ -6,11 +6,32 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri ="/tags/sbTld" prefix="conv" %>
+
 <html>
 <head>
-    <title>$Title$</title>
+    <title>JSPSomeBean</title>
 </head>
 <body>
-$END$
+
+
+   <%--
+
+    <jsp:useBean id = "someBean_" class = "beans.SomeBean" />
+
+    Text before setter : "<jsp:getProperty name="someBean_" property="someText" />".
+
+    <jsp:setProperty name="someBean_" property = "someText" value = "New Text 123" />
+
+    Text after setter : "<jsp:getProperty name="someBean_" property="someText" />".
+
+    --%>
+
+    <conv:Convert bitCount = "2323"/>
+
+    <conv:Convert bitCount = "2323" ></conv:Convert>
+
+    <conv:Convert bitCount = "2323" >123</conv:Convert>
+
 </body>
 </html>

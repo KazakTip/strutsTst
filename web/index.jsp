@@ -8,7 +8,7 @@
 
 <html>
 <head>
-    <title>Мой первый сервлет</title>
+    <title>Какой-то сервлет</title>
 </head>
 <body>
 
@@ -35,6 +35,10 @@
 
 <Form action="http://localhost:8080/web1_war_exploded/JSP_Servlet.jsp">
     <input type=Submit value="Перейти к странице JSP и реализованным для нее обработчиком в сервлете">
+</Form>
+
+<Form action="http://localhost:8080/web1_war_exploded/SomeBeanJSP.jsp">
+    <input type=Submit value="Перейти к странице JSP SomeBeans">
 </Form>
 
 </body>

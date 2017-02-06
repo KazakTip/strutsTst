@@ -8,6 +8,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>/tags/sbTld</taglib-uri>
+            <taglib-location>/WEB-INF/lib/sbTLD.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
     <!-- Указываем серверу что класс servlets.XmlDeployment является сервлетой и именуем ее SomeNameServlet -->
     <servlet>
         <servlet-name>SomeNameServlet</servlet-name>
