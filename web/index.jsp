@@ -4,7 +4,7 @@
 
  --%>
 <%@ page contentType="text/html;charset=UTF-8" %> <!-- что бы кириллица отображалась нормально -->
-
+<%@ taglib prefix="html" uri="http://struts.apache.org/tags-html-el" %>
 
 <html>
 <head>
@@ -12,7 +12,25 @@
 </head>
 <body>
 
-<Form action="http://localhost:8080/web1_war_exploded/FindBooks/FindMethodPost" method="post">
+<html:form action="/struts/TstAction" focus="userName">
+<p>
+    321
+    <html:text property="userName" size="20" />
+    <html:errors property="userName" />
+</p>
+<p>
+    123
+    <html:password property="userPswd" size="20" />
+    <html:errors property="userPswd" />
+</p>
+<html:submit>
+    Go
+</html:submit>
+</html:form>
+
+
+
+<%--<Form action="http://localhost:8080/web1_war_exploded/FindBooks/FindMethodPost" method="post">
     <input type=Text name="FindText">
     <input type=Submit value="Найти методом post">
 </Form>
@@ -40,6 +58,11 @@
 <Form action="http://localhost:8080/web1_war_exploded/SomeBeanJSP.jsp">
     <input type=Submit value="Перейти к странице JSP SomeBeans">
 </Form>
+
+<Form action="http://localhost:8080/web1_war_exploded/SomeBeanJSP.jsp">
+    <input type=Submit value="Перейти к странице JSP SomeBeans">
+</Form>--%>
+
 
 </body>
 </html>
