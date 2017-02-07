@@ -12,20 +12,30 @@
 </head>
 <body>
 
-<html:form action="/struts/TstAction" focus="userName">
-<p>
-    321
-    <html:text property="userName" size="20" />
-    <html:errors property="userName" />
-</p>
-<p>
-    123
-    <html:password property="userPswd" size="20" />
-    <html:errors property="userPswd" />
-</p>
-<html:submit>
-    Go
-</html:submit>
+<html:form action="/struts/TstAction">
+
+    <html:radio property="frwSel" value="0"/> Trash       <br/>
+    <html:radio property="frwSel" value="1"/> TilesMain   <br/>
+    <html:radio property="frwSel" value="2"/> TilesMain2  <br/>
+    <%--<input type="submit" value="submit" />--%>
+
+    <%--<p>
+        321
+        <html:text property="userName" size="20" />
+        <html:errors property="userName" />
+    </p>
+    <p>
+        123
+        <html:password property="userPswd" size="20" />
+        <html:errors property="userPswd" />
+    </p>  --%>
+
+    <html:submit>
+        Go
+    </html:submit>
+
+
+
 </html:form>
 
 

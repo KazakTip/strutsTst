@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+"http://struts.apache.org/dtds/tiles-config_1_1.dtd">
+<tiles-definitions xmlns:tiles="http://struts.apache.org/dtds/tiles-config_1_1.dtd">
+
+    <definition name="sLayout" path="/tilesLayouts/sLayout.jsp">
+        <tiles:put name="title" value="A simple page" />
+        <tiles:put name="header" value="/TstAct/tilesBlockTst/tstHeader.jsp" />
+        <tiles:put name="footer" value="/TstAct/tilesBlockTst/tstFooter.jsp" />
+    </definition>
+
+    <definition name="extLayout" extends="sLayout">
+        <tiles:put name="title" value="A extended page" />
+        <tiles:put name="body1" value="body1"/>
+    </definition>
+
+</tiles-definitions>

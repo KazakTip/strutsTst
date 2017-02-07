@@ -17,6 +17,8 @@ public class TstActionForm extends SomeActionFormBase
   private String userPswd;
   private String userName;
   
+  private int frwSel;
+  
   public String getUserPswd()
   {
     return userPswd;
@@ -37,6 +39,15 @@ public class TstActionForm extends SomeActionFormBase
     this.userName = userName;
   }
   
+  public int getFrwSel()
+  {
+    return frwSel;
+  }
+  
+  public void setFrwSel(int frwSel)
+  {
+    this.frwSel = frwSel;
+  }
   
   @Override
   public ActionErrors validate(ActionMapping mapping, ServletRequest request)
